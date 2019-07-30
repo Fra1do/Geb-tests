@@ -1,7 +1,6 @@
 package Pages
 
 import geb.Page
-import groovy.Pages.LoginPage
 
 class MainPage extends Page{
     static url = "/"

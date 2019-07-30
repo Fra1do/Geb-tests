@@ -7,7 +7,7 @@ import Tools.Helper
 import Tools.Randoms
 import geb.Browser
 import geb.navigator.Navigator
-import groovy.Pages.LoginPage
+
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
@@ -57,7 +57,7 @@ import org.openqa.selenium.remote.DesiredCapabilities
                 then: "I see this page"
                 at MainPage
 
-                when: "I click person cabiner"
+             /*   when: "I click person cabiner"
                 personalCabinet.click()
 
                 then: "I see LoginPage"
@@ -65,12 +65,12 @@ import org.openqa.selenium.remote.DesiredCapabilities
 
                 when: "I create new user"
                 selectRegister.click()
-                buttonFindJob.click()
+                buttonFindJob.click()*/
 
                 then: "I see MainPage"
                 Thread.sleep(3000)
 
-             /*   when: "I create new search"
+                when: "I create new search"
                 setCustomPosition << "Тестировщик"
                 searchButton.click()
 
@@ -107,7 +107,7 @@ import org.openqa.selenium.remote.DesiredCapabilities
                 createResume.click()
 
                 then: "I return in VacancyPage"
-                Thread.sleep(60000)*/
+                Thread.sleep(60000)
 
         browser.quit()
 }
